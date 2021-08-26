@@ -1,0 +1,10 @@
+.tab{
+    border: 2px solid white;
+
+}
+#create_account{
+    display: none;
+}
+#report_account{
+    display: none;
+}

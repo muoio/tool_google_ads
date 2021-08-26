@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Tool google ads",
+    "version": "1.0",
+  
+    "description": "Tool google ads",
+    "icons": {
+        "48": "icon.png"
+      },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Google ads tool",
+        "default_popup": "popup.html"
+      },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://ads.google.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions":[
+        "storage",
+        "tabs",
+        "activeTab",
+        "alarms"
+    ]
+  
+  }
